@@ -1,5 +1,6 @@
 # 🚀 MD Shakil | AI Engineer • Full-Stack Developer • System Architect
 
+
 <div align="center">
 
 <h1>Building AI That Feels Alive</h1>
@@ -20,7 +21,8 @@
 </a>
 </p>
 
-<img src="./public/github-banner.png" alt="MD Shakil Portfolio Banner"/>
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/4b76a883-86ae-4712-a768-e33850af8827" />
+
 
 </div>
 
