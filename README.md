@@ -1,5 +1,6 @@
 # 🚀 MD Shakil | AI Engineer • Full-Stack Developer • System Architect
-
+  
+  👉👉👉👉👉👉👉👉👉👉👉👉👉👉👉👉👉👉 **[View Resume](https://github.com/mdShakil2004/shakil-ai-portfolio/blob/main/public/Shakil_AI_Engineer.pdf)**
 
 <div align="center">
 
