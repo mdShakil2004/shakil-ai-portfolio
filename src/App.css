@@ -1,0 +1,27 @@
+@keyframes gift-open-left {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-95deg);
+  }
+}
+
+@keyframes gift-open-right {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(95deg);
+  }
+}
+
+.gift-left {
+  transform-origin: left center;
+  animation: gift-open-left 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.gift-right {
+  transform-origin: right center;
+  animation: gift-open-right 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}

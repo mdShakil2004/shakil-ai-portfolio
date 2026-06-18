@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* body {
+  margin: 0;
+  background: #0d001a;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+} */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  overscroll-behavior-x: none;
+}
+
+/* Fix mobile Safari vh bug */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent;
+}
+
+.glow-btn {
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+  transition: all 0.4s ease;
+}
+.glow-btn:hover {
+  box-shadow: 0 0 50px rgba(0, 255, 255, 0.9);
+  transform: translateY(-4px);
+}
+
+@keyframes independentFloat {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(var(--x), calc(var(--y) * -1));
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.bubble {
+  animation: independentFloat var(--d) ease-in-out infinite;
+}
+
+@layer utilities {
+  /* ultra-smooth soft float */
+  @keyframes softFloat {
+    0% {
+      transform: translateY(0px) translateX(0px);
+    }
+    50% {
+      transform: translateY(-10px) translateX(3px);
+    }
+    100% {
+      transform: translateY(0px) translateX(0px);
+    }
+  }
+
+  .soft-float {
+    animation: softFloat var(--t, 6s) ease-in-out infinite;
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbitReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 3s ease-in-out infinite 1s;
+}
+
+.animate-float-slow {
+  animation: float 4s ease-in-out infinite 0.5s;
+}
+
+
